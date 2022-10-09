@@ -1,0 +1,12 @@
+Resources:
+  ATUs3: 
+    Type: AWS::S3::Bucket
+    Properties:
+      "AccessControl": "PublicRead"
+      "BucketName": "atudevopsdemos3"
+      #bucketnames are lowercase
+      Tags:
+        - Key: "CostCenter"
+          Value: "D301"
+        - Key: "proj"
+          Value: "atudevopsdemo"
